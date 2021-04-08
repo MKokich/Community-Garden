@@ -1,6 +1,6 @@
-// const Driver = require('./Driver');
-// const License = require('./License');
-// const Car = require('./Car');
+const Post = require('./post');
+const User = require('./user');
+
 
 // Driver.hasOne(License, {
 //   foreignKey: 'driver_id',
@@ -20,4 +20,4 @@
 //   foreignKey: 'driver_id',
 // });
 
-// module.exports = { Driver, License, Car };
+module.exports = { User, Post };
