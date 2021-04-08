@@ -5,7 +5,8 @@
     "sun_requirement": "low",
     "pet_safe": "true",
     "edible": "false",
-    "easy_care": "true"
+    "easy_care": "true",
+    "have_or_want": "want"
   },
   {
     "plant_name": "Aloe Vera",
@@ -13,7 +14,8 @@
     "sun_requirement": "high",
     "pet_safe": "true",
     "edible": "false",
-    "easy_care": "true"
+    "easy_care": "true",
+    "have_or_want": "have"
   },
   {
     "plant_name": "Petunia",
@@ -21,6 +23,7 @@
     "sun_requirement": "high",
     "pet_safe": "true",
     "edible": "false",
-    "easy_care": "true"
+    "easy_care": "true",
+    "have_or_want": "have"
   }
 ]
