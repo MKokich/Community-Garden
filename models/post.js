@@ -1,9 +1,6 @@
 const { Model, DataTypes } = require("sequelize");
-
 const sequelize = require("../config/connection");
-
 class Post extends Model {}
-
 Post.init(
   {
     id: {
@@ -35,7 +32,6 @@ Post.init(
     easy_care: {
       type: DataTypes.BOOLEAN,
     },
-
     user_id: {
       type: DataTypes.INTEGER,
       references: {
@@ -44,7 +40,6 @@ Post.init(
       },
     },
   },
-
   {
     sequelize,
     timestamps: false,
@@ -53,5 +48,4 @@ Post.init(
     modelName: "post",
   }
 );
-
 module.exports = Post;
