@@ -32,6 +32,10 @@ Post.init(
     easy_care: {
       type: DataTypes.BOOLEAN,
     },
+    have_or_want: {
+      type: DataTypes.STRING,
+    },
+
     user_id: {
       type: DataTypes.INTEGER,
       references: {
