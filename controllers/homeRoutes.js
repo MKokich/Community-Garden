@@ -4,7 +4,7 @@ const path = require('path');
 // const withAuth = require('../utils/auth');
 
 router.get('/', (req, res) => {
-        res.sendFile(path.join(__dirname, '../front/index.html'));
+        res.sendFile(path.join(__dirname, '/index.html'));
       });
 
 // router.get('/', async (req, res) => {
