@@ -10,6 +10,23 @@ router.get('/', async (req, res) => {
     }
   });
 
+router.get('/:id', async (req, res) => {
+    try {
+      const onePost = await Post.findByPk(req.params.id, {
+        include: [{ 
+          model: Post, 
+          attributes: "edible" 
+        }]});
+      if (!onePost) {
+        res.status(404).json({ message: 'not found' });
+        return;
+      }
+      res.status(200).json(onePost);
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  });
+
 router.post('/', async (req, res) => {
     try {
       const newPosts = await Post.create(req.body);

@@ -1,23 +1,18 @@
 const Post = require('./post');
 const User = require('./user');
 
-
 // Driver.hasOne(License, {
 //   foreignKey: 'driver_id',
 //   onDelete: 'CASCADE',
 // });
 
-// License.belongsTo(Driver, {
-//   foreignKey: 'driver_id',
-// });
+Post.belongsTo(User, {
+  foreignKey: 'user_id',
+});
 
-// Driver.hasMany(Car, {
-//   foreignKey: 'driver_id',
-//   onDelete: 'CASCADE',
-// });
-
-// Car.belongsTo(Driver, {
-//   foreignKey: 'driver_id',
-// });
+User.hasMany(Post, {
+  foreignKey: 'user_id',
+  onDelete: 'CASCADE',
+});
 
 module.exports = { User, Post };
