@@ -31,7 +31,11 @@ app.set("view engine", "handlebars");
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 // here is public vs front
+<<<<<<< HEAD
 app.use(express.static(path.join(__dirname, "public")));
+=======
+app.use(express.static(path.join(__dirname, 'public')));
+>>>>>>> 334ba354c3dc5aa5537e0d0b9dcd9e56d39d2242
 
 app.use(routes);
 
