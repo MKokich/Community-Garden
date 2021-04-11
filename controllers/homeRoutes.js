@@ -1,11 +1,42 @@
 const router = require('express').Router();
-const path = require('path');
-// const { Project, User } = require('../models');
+// const path = require('path');
+// const { Post, User } = require('../models');
 // const withAuth = require('../utils/auth');
 
-router.get('/', (req, res) => {
-        res.sendFile(path.join(__dirname, '/index.html'));
-      });
+router.get('/', async (req, res) => {
+  // Send the rendered Handlebars.js template back as the response
+  res.render('main');
+});
+
+module.exports = router;
+
+// router.get('/', (req, res) => {
+//         res.sendFile(path.join(__dirname, '/index.html'));
+//       });
+
+// router.get('/exchange', (req, res) => {
+//         res.sendFile(path.join(__dirname, '/exchange.html'));
+//       });
+
+// router.get('/adopt', (req, res) => {
+//         res.sendFile(path.join(__dirname, '/adopt.html'));
+//       });
+
+// router.get('/stemcuttings', (req, res) => {
+//         res.sendFile(path.join(__dirname, '/stemcuttings.html'));
+//       });
+
+// router.get('/login', (req, res) => {
+//         res.sendFile(path.join(__dirname, '/login.html'));
+//       });
+
+// router.get('/create', (req, res) => {
+//         res.sendFile(path.join(__dirname, '/create.html'));
+//       });
+
+// router.get('/aboutUs', (req, res) => {
+//         res.sendFile(path.join(__dirname, '/aboutUs.html'));
+//       });
 
 // router.get('/', async (req, res) => {
 //   try {
@@ -85,5 +116,5 @@ router.get('/', (req, res) => {
 //   res.render('login');
 // });
 
-module.exports = router;
+// module.exports = router;
 
