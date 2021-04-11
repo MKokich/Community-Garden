@@ -1,11 +1,12 @@
 const router = require('express').Router();
 const path = require('path');
-// const { Project, User } = require('../models');
+// const { Post, User } = require('../models');
 // const withAuth = require('../utils/auth');
 
 router.get('/', (req, res) => {
         res.sendFile(path.join(__dirname, '/index.html'));
       });
+
 
 // router.get('/', async (req, res) => {
 //   try {
