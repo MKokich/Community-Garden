@@ -1,7 +1,7 @@
 const router = require("express").Router();
 // const path = require('path');
-const { User } = require('../models');
-const withAuth = require('../utils/auth');
+const { User } = require("../models");
+const withAuth = require("../utils/auth");
 
 // router.get('/', withAuth, async (req, res) => {
 //   try {
@@ -23,11 +23,7 @@ const withAuth = require('../utils/auth');
 
 router.get("/", async (req, res) => {
   // Send the rendered Handlebars.js template back as the response
-<<<<<<< HEAD
   res.render("other");
-=======
-  res.render('other');
->>>>>>> 334ba354c3dc5aa5537e0d0b9dcd9e56d39d2242
 });
 
 module.exports = router;
