@@ -10,21 +10,45 @@ router.get('/', async (req, res) => {
     }
   });
 
-router.get('/:id', async (req, res) => {
-    try {
-      const onePost = await Post.findByPk(req.params.id, {
-        include: [{ 
-          model: Post, 
-          attributes: "edible" 
-        }]});
-      if (!onePost) {
-        res.status(404).json({ message: 'not found' });
-        return;
+  router.get('/:id', (req, res) => {
+    Post.findOne({
+      where: {
+        id: req.params.id,
       }
-      res.status(200).json(onePost);
-    } catch (err) {
-      res.status(500).json(err);
-    }
+    })
+      .then((postData) => res.json(postData))
+      .catch((err) => res.status(400).json(err));
+  });
+
+//   work this out more
+  router.get('/name/:plant_name', (req, res) => {
+    Post.findOne({
+      where: {
+        plant_name: req.params.plant_name,
+      }
+    })
+      .then((postData) => res.json(postData))
+      .catch((err) => res.status(400).json(err));
+  });
+
+  router.get('/user/:user_id', (req, res) => {
+    Post.findAll({
+      where: {
+        user_id: req.params.user_id,
+      }
+    })
+      .then((postData) => res.json(postData))
+      .catch((err) => res.status(400).json(err));
+  });
+
+  router.get('/easy/true', (req, res) => {
+    Post.findAll({
+      where: {
+        easy_care: true,
+      }
+    })
+      .then((postData) => res.json(postData))
+      .catch((err) => res.status(400).json(err));
   });
 
 router.post('/', async (req, res) => {
