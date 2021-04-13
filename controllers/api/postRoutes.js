@@ -10,6 +10,7 @@ router.get("/", async (req, res) => {
   }
 });
 
+<<<<<<< HEAD
 router.get("/:id", (req, res) => {
   Post.findOne({
     where: {
@@ -19,6 +20,17 @@ router.get("/:id", (req, res) => {
     .then((postData) => res.json(postData))
     .catch((err) => res.status(400).json(err));
 });
+=======
+  router.get('/:id', (req, res) => {
+    Post.findOne({
+      where: {
+        id: req.params.id,
+      }
+    })
+      .then((postData) => res.json(postData))
+      .catch((err) => res.status(400).json(err));
+  });
+>>>>>>> 65d2084544cbc91864b19b59a89e83d6c0bd593d
 
 router.get("/name/:plant_name", (req, res) => {
   Post.findAll({
@@ -40,6 +52,7 @@ router.get("/user/:user_id", (req, res) => {
     .catch((err) => res.status(400).json(err));
 });
 
+<<<<<<< HEAD
 router.get("/easy/true", (req, res) => {
   Post.findAll({
     where: {
@@ -49,6 +62,17 @@ router.get("/easy/true", (req, res) => {
     .then((postData) => res.json(postData))
     .catch((err) => res.status(400).json(err));
 });
+=======
+  router.get('/easy/true', (req, res) => {
+    Post.findAll({
+      where: {
+        easy_care: true,
+      }
+    })
+      .then((postData) => res.json(postData))
+      .catch((err) => res.status(400).json(err));
+  });
+>>>>>>> 65d2084544cbc91864b19b59a89e83d6c0bd593d
 
 router.get("/:plant_name", (req, res) => {
   Post.findOne({
