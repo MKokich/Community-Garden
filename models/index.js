@@ -1,11 +1,6 @@
 const Post = require('./post');
 const User = require('./user');
 
-// Driver.hasOne(License, {
-//   foreignKey: 'driver_id',
-//   onDelete: 'CASCADE',
-// });
-
 Post.belongsTo(User, {
   foreignKey: 'user_id',
 });
