@@ -32,7 +32,16 @@ Post.init(
     easy_care: {
       type: DataTypes.BOOLEAN,
     },
-    have_or_want: {
+    sunlight_needed: {
+      type: DataTypes.STRING,
+    },
+    water_needed: {
+      type: DataTypes.STRING,
+    },
+    growth_rate: {
+      type: DataTypes.STRING,
+    },
+    size: {
       type: DataTypes.STRING,
     },
 
@@ -41,6 +50,14 @@ Post.init(
       references: {
         model: "user",
         key: "id",
+      },
+    },
+
+    user_email: {
+      type: DataTypes.STRING,
+      references: {
+        model: "user",
+        key: "email",
       },
     },
   },

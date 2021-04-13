@@ -1,10 +1,10 @@
-const sequelize = require('../config/connection');
-// will need ot update with our models
-const { User, Post } = require('../models');
+const sequelize = require("../config/connection");
+// will need to update with our models
+const { User, Post } = require("../models");
 
 // will also need to update to our models
-const userData = require('./userSeedData.json');
-const postData = require('./postSeedData.json');
+const userData = require("./userSeedData.json");
+const postData = require("./postSeedData.json");
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
