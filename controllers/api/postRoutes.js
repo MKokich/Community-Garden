@@ -10,17 +10,6 @@ router.get("/", async (req, res) => {
   }
 });
 
-<<<<<<< HEAD
-router.get("/:id", (req, res) => {
-  Post.findOne({
-    where: {
-      id: req.params.id,
-    },
-  })
-    .then((postData) => res.json(postData))
-    .catch((err) => res.status(400).json(err));
-});
-=======
   router.get('/:id', (req, res) => {
     Post.findOne({
       where: {
@@ -60,7 +49,6 @@ router.get("/:id", (req, res) => {
       .then((postData) => res.json(postData))
       .catch((err) => res.status(400).json(err));
   });
->>>>>>> ed47e2867c0a4263afa9c3f92aa3616f421244d2
 
 router.get("/:plant_name", (req, res) => {
   Post.findOne({
