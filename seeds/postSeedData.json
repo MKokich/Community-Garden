@@ -6,7 +6,9 @@
     "pet_safe": "true",
     "edible": "false",
     "easy_care": "true",
-    "have_or_want": "want"
+    "have_or_want": "want",
+    "user_id": 1,
+    "user_email": "jack1@gmail.com"
   },
   {
     "plant_name": "Aloe Vera",
@@ -15,7 +17,9 @@
     "pet_safe": "true",
     "edible": "false",
     "easy_care": "true",
-    "have_or_want": "have"
+    "have_or_want": "have",
+    "user_id": 2,
+    "user_email": "jack2@gmail.com"
   },
   {
     "plant_name": "Petunia",
@@ -24,6 +28,8 @@
     "pet_safe": "true",
     "edible": "false",
     "easy_care": "true",
-    "have_or_want": "have"
+    "have_or_want": "have",
+    "user_id": 3,
+    "user_email": "jack3@gmail.com"
   }
 ]

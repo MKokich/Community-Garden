@@ -1,7 +1,7 @@
-const router = require('express').Router();
+const router = require("express").Router();
 // const path = require('path');
-const { User } = require('../models');
-const withAuth = require('../utils/auth');
+const { User } = require("../models");
+const withAuth = require("../utils/auth");
 
 // router.get('/', withAuth, async (req, res) => {
 //   try {
@@ -21,9 +21,9 @@ const withAuth = require('../utils/auth');
 //   }
 // });
 
-router.get('/', async (req, res) => {
+router.get("/", async (req, res) => {
   // Send the rendered Handlebars.js template back as the response
-  res.render('other');
+  res.render("other");
 });
 
 module.exports = router;
@@ -72,15 +72,14 @@ module.exports = router;
 //     const projects = projectData.map((project) => project.get({ plain: true }));
 
 //     // Pass serialized data and session flag into template
-//     res.render('homepage', { 
-//       projects, 
-//       logged_in: req.session.logged_in 
+//     res.render('homepage', {
+//       projects,
+//       logged_in: req.session.logged_in
 //     });
 //   } catch (err) {
 //     res.status(500).json(err);
 //   }
 // });
-  
 
 // router.get('/project/:id', async (req, res) => {
 //   try {
@@ -135,4 +134,3 @@ module.exports = router;
 // });
 
 // module.exports = router;
-
