@@ -1,0 +1,22 @@
+nav {
+    color:#40693E;
+    font-family: 'Amatic SC', cursive;
+
+}
+
+h1 {
+    color:#40693E;
+    font-family: 'Amatic SC', cursive;
+    font-size: 70px;
+    text-align: center;
+    
+}
+
+.bg {
+    background-image:url(/front/pics/loginPlants.jpg);
+}
+
+.col-4{
+    align-items: center;
+}
+
