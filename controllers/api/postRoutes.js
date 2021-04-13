@@ -31,9 +31,8 @@ router.get("/:id", (req, res) => {
       .catch((err) => res.status(400).json(err));
   });
 
-//   work this out more
   router.get('/name/:plant_name', (req, res) => {
-    Post.findOne({
+    Post.findAll({
       where: {
         plant_name: req.params.plant_name,
       }
