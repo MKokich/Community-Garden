@@ -3,7 +3,7 @@ const { Post, User } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get("/", async (req, res) => {
-  res.render('home', {logged_in: req.session.logged_in}); 
+  res.render('other', {logged_in: req.session.logged_in}); 
 });
 
 router.get('/home', withAuth ,async (req, res) => {
@@ -15,10 +15,10 @@ router.get('/login', async (req, res) => {
 });
 
 router.get('/newUser', async (req, res) => {
-  res.render('newUser');
+  res.render('createUser');
 });
 
-router.get('/adopt', withAuth ,async (req, res) => {
+router.get('/adopt', async (req, res) => {
   
   const adoptablePlants = await Post.findAll().catch((err) => { 
     res.json(err);
@@ -26,13 +26,29 @@ router.get('/adopt', withAuth ,async (req, res) => {
 
   const plants = adoptablePlants.map((post) => post.get({ plain: true }));
 
-    res.render('adopt', { plants, logged_in: req.session.logged_in });
+    res.render('adopt', plants);
     });
 
-  router.get('/newPost/posts', withAuth ,async (req, res) => {
+  router.get('/newPost/posts', async (req, res) => {
   res.render('newPost');
   
 });
+
+// router.get('/adopt', withAuth ,async (req, res) => {
+  
+//   const adoptablePlants = await Post.findAll().catch((err) => { 
+//     res.json(err);
+//     });
+
+//   const plants = adoptablePlants.map((post) => post.get({ plain: true }));
+
+//     res.render('adopt', { plants, logged_in: req.session.logged_in });
+//     });
+
+//   router.get('/newPost/posts', withAuth ,async (req, res) => {
+//   res.render('newPost');
+  
+// });
 
 router.get('/easy', withAuth ,async (req, res) => {
   try{ 
