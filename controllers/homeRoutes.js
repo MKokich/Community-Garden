@@ -23,6 +23,8 @@ router.get("/newUser", async (req, res) => {
 });
 
 router.get("/adopt", async (req, res) => {
+  // const adoptablePlants = await Post.findAll();
+
   const adoptablePlants = await Post.findAll().catch((err) => {
     res.json(err);
   });

@@ -33,9 +33,6 @@ Post.init(
     easy_care: {
       type: DataTypes.BOOLEAN,
     },
-    sunlight_needed: {
-      type: DataTypes.STRING,
-    },
     water_needed: {
       type: DataTypes.STRING,
     },
