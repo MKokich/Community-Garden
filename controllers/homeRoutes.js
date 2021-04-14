@@ -11,7 +11,7 @@ router.get("/", (req, res) => {
 // });
 
 router.get("/home", async (req, res) => {
-  res.render("home");
+  res.render("other");
 });
 
 router.get("/login", async (req, res) => {
@@ -23,17 +23,17 @@ router.get("/newUser", async (req, res) => {
 });
 
 router.get("/adopt", async (req, res) => {
-  // const adoptablePlants = await Post.findAll();
-
+  
   const adoptablePlants = await Post.findAll().catch((err) => {
     res.json(err);
   });
 
   const plants = adoptablePlants.map((post) => post.get({ plain: true }));
-  res.render("adopt", { plants });
+  res.render("adopt", {plants});
 });
 
 router.get("/easy", async (req, res) => {
+
   const easyCarePlants = await Post.findAll({
     where: {
       easy_care: true,
@@ -44,7 +44,7 @@ router.get("/easy", async (req, res) => {
   res.render("easyCare", { easyPlants });
 });
 
-router.get("/newPost/posts", async (req, res) => {
+router.get("/newPost", async (req, res) => {
   res.render("newPost");
 });
 
