@@ -7,7 +7,6 @@ $(function () {
     const username = $("#username").val();
     const email = $("#email").val();
     const password = $("#password").val();
-    const password2 = $("#password2").val();
 
     const newUser = {
       name,
@@ -15,10 +14,13 @@ $(function () {
       email,
       password,
     };
-
+    console.log(newUser);
     fetch(`/api/users/create`, {
       method: "POST",
-      body: newUser,
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newUser),
     })
       .then(function (response) {
         return response.json();
@@ -26,6 +28,9 @@ $(function () {
       .then(function (data) {
         console.log(data);
       });
-    // console.log(newUser);
   });
+
+  $("#postbtn").on("click");
+
+  // method: post
 });
