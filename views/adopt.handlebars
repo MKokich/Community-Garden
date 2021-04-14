@@ -1,4 +1,4 @@
-     <link href= "./css/adopt.css" rel="stylesheet">
+     <link href= "../public/css/adopt.css" rel="stylesheet">
     </head>
 
 <body>
@@ -6,6 +6,7 @@
 <section class="container">
   <h3 class="gallery-name">Adopt!!!</h3>
   <section class="flex-row justify-center">
+    {{#each post}}
     {{#each plants as |post|}}
     <p>{{> displayAdopt}}</p>
     {{/each}} 

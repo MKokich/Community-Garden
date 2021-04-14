@@ -23,3 +23,11 @@ p {
    font-family: 'Amatic SC', cursive; 
    font-size: 30px;
 }
+
+.logout{
+    align-items: flex-end;
+}
+
+.push {
+    height: 30vh;
+}

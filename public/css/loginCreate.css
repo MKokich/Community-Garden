@@ -12,11 +12,11 @@ h1 {
     
 }
 
-.bg {
-    background-image:url(/front/pics/loginPlants.jpg);
-}
 
 .col-4{
     align-items: center;
 }
 
+.push {
+    height: 30vh;
+}
