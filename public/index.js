@@ -1,4 +1,3 @@
-// const createPost = document.querySelector("#savebtn");
 const url = "https://localhost3001";
 
 $(function () {
@@ -30,7 +29,19 @@ $(function () {
       });
   });
 
-  $("#postbtn").on("click");
+  // $("#postbtn").on("click", function (e){
+  //   const name = $("#name").val();
+  //   const username = $("#username").val();
+  //   const email = $("#email").val();
+  //   const password = $("#password").val();
+
+  //   const newUser = {
+  //     name,
+  //     username,
+  //     email,
+  //     password,
+  //   };
+  // }
 
   // method: post
 });
