@@ -1,0 +1,13 @@
+     <link href= "./css/adopt.css" rel="stylesheet">
+    </head>
+
+<body>
+
+<section class="container">
+  <h3 class="gallery-name">Easy Plants!!!</h3>
+  <section class="flex-row justify-center">
+    {{#each easyPlants as |post|}}
+    <p>{{> displayAdopt}}</p>
+    {{/each}} 
+  </section>
+</section>

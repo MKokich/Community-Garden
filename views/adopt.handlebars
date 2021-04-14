@@ -1,4 +1,4 @@
-     <link href= "./css/adopt.css" rel="stylesheet">
+     <link href= "../public/css/adopt.css" rel="stylesheet">
     </head>
 
 <body>
@@ -6,11 +6,10 @@
 <section class="container">
   <h3 class="gallery-name">Adopt!!!</h3>
   <section class="flex-row justify-center">
-<!-- For each gallery, the gallery-details partial is used to render the gallery data -->
     {{#each post}}
+    {{#each plants as |post|}}
     <p>{{> displayAdopt}}</p>
-    {{/each}}
+    {{/each}} 
   </section>
 </section>
 
-<script src="/path/to/handlebars.min.js"></script>
