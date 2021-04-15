@@ -6,9 +6,9 @@
             {{plant_name}}
         </div>
         <div class="card-body">
-            {{#if easy_care}}
+            {{#each newPost as |post|}}
             <p class="easy-care">
-                great choice for beginner plant parents
+                your plant is now up for adoption :)
             </p>
             <p>
                 {{description}}
@@ -20,8 +20,11 @@
                 <li>
                     water: {{water_requirement}}
                 </li>
+                <li>
+                    growth rate: {{growth_rate}}
+                </li>
             </ol>
-            {{/if}}
+            {{/each}}
             <div>
             </div>
         </div>
