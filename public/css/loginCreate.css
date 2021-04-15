@@ -1,22 +1,25 @@
 nav {
-    color:#40693E;
-    font-family: 'Amatic SC', cursive;
-
+  color: #40693e;
+  font-family: "Amatic SC", cursive;
+  font-weight: bold;
+  font-size: medium;
 }
 
 h1 {
-    color:#40693E;
-    font-family: 'Amatic SC', cursive;
-    font-size: 70px;
-    text-align: center;
-    
+  color: #40693e;
+  font-family: "Amatic SC", cursive;
+  font-size: 70px;
+  text-align: center;
 }
 
-
-.col-4{
-    align-items: center;
+.col-4 {
+  align-items: center;
 }
 
 .push {
-    height: 30vh;
+  height: 45vh;
+}
+
+h3 {
+  text-align: center;
 }

@@ -1,4 +1,4 @@
-// root to route handler for plant post 
+// root to route handler for plant post
 const router = require("express").Router();
 const { Post } = require("../../models");
 
@@ -61,10 +61,24 @@ router.get("/:plant_name", (req, res) => {
     .catch((err) => res.status(400).json(err));
 });
 
-router.post("/", async (req, res) => {
+router.post("/newPost", async (req, res) => {
   try {
-    const newPosts = await Post.create(req.body);
-    res.status(200).json(newPosts);
+    const newPost = await Post.create(req.body);
+    req.session.save(() => {
+      req.session.user_id = newPost.id;
+      req.session.plant_name = newPost.plant_name;
+      req.session.description = newPost.description;
+      req.session.sun_requirement = newPost.sun_requirement;
+      req.session.pet_safe = newPost.pet_safe;
+      req.session.edible = newPost.edible;
+      req.session.easy_care = newPost.easy_care;
+      req.session.water_needed = newPost.water_needed;
+      req.session.growth_rate = newPost.growth_rate;
+      req.session.size = newPost.size;
+      req.session.user_id = newPost.user_id;
+      req.session.user_email = newPost.user_email;
+      res.status(200).json(newPost);
+    });
   } catch (err) {
     res.status(500).json(err);
   }
