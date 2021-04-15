@@ -3,45 +3,9 @@
     {{body}}
     <div class="post-card">
         {{#each newPost as |post|}}
-        <div class="post-card-header">
-            {{> plant_name}}
-            <div class="card-body">
-                <p>
-                    {{description}}
-                </p>
-                <ol>
-                    <li>
-                        sun: {{sun_requirement}}
-                    </li>
+        <div class="card-body">
+            {{> displayAdopt}}
 
-                    <li>
-                        water: {{water_requirement}}
-                    </li>
-
-                    <li>
-                        easy care: {{easy_care}}
-                    </li>
-
-                    <li>
-                        pet safe: {{pet_safe}}
-                    </li>
-
-                    <li>
-                        growth rate: {{growth_rate}}
-                    </li>
-                    <li>
-                        size: {{size}}
-                    </li>
-
-                    <li>
-                        edible: {{edible}}
-                    </li>
-                </ol>
-
-                <p>contact: {{user_email}}</p>
-            </div>
             {{/each}}
         </div>
-
     </div>
-</div>
