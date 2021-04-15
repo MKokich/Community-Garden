@@ -13,25 +13,26 @@ Post.init(
     plant_name: {
       type: DataTypes.STRING,
       allowNull: false,
+      unique: true,
+      validate: {
+        notNull: { args: true, msg: "You must enter a plant name" },
+      },
     },
     description: {
       type: DataTypes.STRING,
       allowNull: false,
-      validate: {
-        max: 30,
-      },
     },
     sun_requirement: {
       type: DataTypes.STRING,
     },
     pet_safe: {
-      type: DataTypes.BOOLEAN,
+      type: DataTypes.STRING,
     },
     edible: {
-      type: DataTypes.BOOLEAN,
+      type: DataTypes.STRING,
     },
     easy_care: {
-      type: DataTypes.BOOLEAN,
+      type: DataTypes.STRING,
     },
     water_needed: {
       type: DataTypes.STRING,
