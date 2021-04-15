@@ -2,30 +2,26 @@
 <div>
     {{body}}
     <div class="post-card">
+        {{#each newPost as |post|}}
         <div class="post-card-header">
-            {{plant_name}}
-        </div>
-        <div class="card-body">
-            {{#each newPost as |post|}}
-            <p class="easy-care">
-                your plant is now up for adoption :)
-            </p>
-            <p>
-                {{description}}
-            </p>
-            <ol>
-                <li>
-                    sun: {{sun_requirement}}
-                </li>
-                <li>
-                    water: {{water_requirement}}
-                </li>
-                <li>
-                    growth rate: {{growth_rate}}
-                </li>
-            </ol>
-            {{/each}}
-            <div>
+            {{> plant_name}}
+            <div class="card-body">
+                <p>
+                    {{description}}
+                </p>
+                <ol>
+                    <li>
+                        sun: {{sun_requirement}}
+                    </li>
+                    <li>
+                        water: {{water_requirement}}
+                    </li>
+                    <li>
+                        growth rate: {{growth_rate}}
+                    </li>
+                </ol>
+                {{/each}}
+
             </div>
         </div>
 
