@@ -2,8 +2,8 @@ const loginFormHandler = async (event) => {
   event.preventDefault();
 
   // adjust to what is in our code 
-  const email = document.querySelector("loginEmail").value.trim();
-  const password = document.querySelector("#loginPassword").value.trim();
+  const email = document.querySelector("email").value.trim();
+  const password = document.querySelector("#password").value.trim();
 
   if (email && password) {
     const response = await fetch("/api/users/login", {

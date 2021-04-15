@@ -6,9 +6,9 @@ router.get("/", (req, res) => {
   res.render("other");
 });
 
-// router.get('/home', withAuth ,async (req, res) => {
-//   res.render('home', {logged_in: req.session.logged_in});
-// });
+router.get('/home', withAuth ,async (req, res) => {
+  res.render('other', {logged_in: req.session.logged_in});
+});
 
 router.get("/home", async (req, res) => {
   res.render("other");
