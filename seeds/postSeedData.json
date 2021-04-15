@@ -6,7 +6,9 @@
     "pet_safe": "true",
     "edible": "false",
     "easy_care": "true",
-    "have_or_want": "want",
+    "water_needed": "just a little",
+    "growth_rate": "this grows slowly",
+    "size": "big",
     "user_id": 1,
     "user_email": "jack1@gmail.com"
   },
@@ -17,7 +19,9 @@
     "pet_safe": "true",
     "edible": "false",
     "easy_care": "true",
-    "have_or_want": "have",
+    "water_needed": "just a little",
+    "growth_rate": "this grows slowly",
+    "size": "big",
     "user_id": 2,
     "user_email": "jack2@gmail.com"
   },
@@ -28,7 +32,9 @@
     "pet_safe": "true",
     "edible": "false",
     "easy_care": "true",
-    "have_or_want": "have",
+    "water_needed": "just a little",
+    "growth_rate": "this grows slowly",
+    "size": "big",
     "user_id": 3,
     "user_email": "jack3@gmail.com"
   }
