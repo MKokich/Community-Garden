@@ -1,6 +1,7 @@
 <div>
     {{body}}
     <div class="plant-card">
+        {{#each post as |plants|}}
         <div class="plant-card-header">
             {{plant_name}}
         </div>
@@ -24,10 +25,9 @@
                     maintenance level: {{easy_care}}
                 </li>
                 <li>
-
-                    <!-- (?) have_or_want 'is this still relevant since we are only doing adopting now?' -->
                 </li>
             </ol>
         </div>
+        {{/each}}
     </div>
 </div>
