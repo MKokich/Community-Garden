@@ -51,7 +51,7 @@ $(function () {
       growth_rate,
       size,
     };
-    console.log(newPost);
+    // console.log(newPost);
     fetch(`/api/posts/newPost`, {
       method: "POST",
       headers: {
