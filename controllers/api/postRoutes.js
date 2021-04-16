@@ -66,6 +66,8 @@ router.post("/newPost", async (req, res) => {
     const newPost = await Post.create(req.body);
     req.session.save(() => {
       req.session.user_id = newPost.id;
+      // ???
+      req.session.image_name = newPost.image_name;
       req.session.plant_name = newPost.plant_name;
       req.session.description = newPost.description;
       req.session.sun_requirement = newPost.sun_requirement;
