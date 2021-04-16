@@ -39,6 +39,7 @@ $(function () {
     const water_needed = $("#water_needed").val();
     const growth_rate = $("#growth_rate").val();
     const size = $("#size").val();
+    const user_email = $("#user_email").val();
 
     const newPost = {
       plant_name,
@@ -50,6 +51,7 @@ $(function () {
       water_needed,
       growth_rate,
       size,
+      user_email,
     };
     // console.log(newPost);
     fetch(`/api/posts/newPost`, {

@@ -11,8 +11,8 @@ Post.init(
       autoIncrement: true,
     },
     // ???
-    image_name:{
-      type: DataTypes.BLOB
+    image_name: {
+      type: DataTypes.BLOB,
     },
     plant_name: {
       type: DataTypes.STRING,
@@ -47,21 +47,8 @@ Post.init(
     size: {
       type: DataTypes.STRING,
     },
-
-    user_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: "user",
-        key: "id",
-      },
-    },
-
     user_email: {
       type: DataTypes.STRING,
-      references: {
-        model: "user",
-        key: "email",
-      },
     },
   },
   {
