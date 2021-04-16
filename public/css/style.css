@@ -24,6 +24,30 @@ h3 {
   text-align: center;
 }
 
+.logoutbtn {
+  background-color: #40693e;
+  color: white;
+}
+
+.postbtn {
+  background-color: #40693e;
+  color: white;
+}
+
+.easy {
+  color: #40693e;
+  font-family: "Amatic SC", cursive;
+  font-size: 70px;
+  text-align: center;
+}
+
+.adopt {
+  color: #40693e;
+  font-family: "Amatic SC", cursive;
+  font-size: 70px;
+  text-align: center;
+}
+
 p {
   color: black;
   font-family: "Amatic SC", cursive;
