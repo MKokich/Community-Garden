@@ -1,1 +1,4 @@
 # Community-Garden
+For the plant lover to the new plant parent, this application has taken on the responsibility to connect those who wish to expand their plant collections. 
+
+The users that maybe moving out of state, who would like to find a new home for their plant may post their plant up for adoption. Once posted, those who are looking to add to their collection may visit the adopt page to scroll through various home seekers. Now, we haven't forgotton about those of us who are looking for a beginners plant, and for that you may look under the 'easy-care' tab. Under you will find what plants were rated easiest to care for.
