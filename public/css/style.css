@@ -23,3 +23,22 @@ h1 {
 h3 {
   text-align: center;
 }
+
+.logoutbtn {
+  background-color: #40693e;
+  color: white;
+  border-color: white;
+}
+
+.createbtn {
+  background-color: #40693e;
+  color: white;
+  border-color: white;
+}
+
+.easy {
+  color: #40693e;
+  font-family: "Amatic SC", cursive;
+  font-size: 70px;
+  text-align: center;
+}
