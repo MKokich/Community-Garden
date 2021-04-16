@@ -9,7 +9,6 @@
     "water_needed": "just a little",
     "growth_rate": "this grows slowly",
     "size": "big",
-    "user_id": 1,
     "user_email": "jack1@gmail.com"
   },
   {
@@ -22,7 +21,6 @@
     "water_needed": "just a little",
     "growth_rate": "this grows slowly",
     "size": "big",
-    "user_id": 2,
     "user_email": "jack2@gmail.com"
   },
   {
@@ -35,7 +33,6 @@
     "water_needed": "just a little",
     "growth_rate": "this grows slowly",
     "size": "big",
-    "user_id": 3,
     "user_email": "jack3@gmail.com"
   }
 ]
