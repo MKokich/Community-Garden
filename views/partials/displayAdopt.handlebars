@@ -2,20 +2,22 @@
 
   <a href="/post/{{id}}"></a>
 
-  <header id="plant_name">{{plant_name}}</header>
+  <header class="header" id="plant_name">{{plant_name}}</header>
 
   <div class="card-body">
     {{!-- needs looking at --}}
     {{!-- <div>{{}}</div> --}}
-    <p id="description">{{description}}</p>
-    <p id="sun_requirement">{{sun_requirement}}</p>
-    <p id="pet_safe">{{pet_safe}}</p>
-    <p id="edible">{{edible}}</p>
-    <p id="easy_care">{{easy_care}}</p>
-    <p id="water_needed">{{water_needed}}</p>
-    <p id="growth_rate">{{growth_rate}}</p>
-    <p id="size">{{size}}</p>
-    <p id="user_email">{{user_email}}</p>
+    <div class="list" >description<div>
+    <div class="list" id="description">{{description}}</div>
+    <div class="list" id="sun_requirement"> sun needs :{{sun_requirement}}</div>
+    <div class="list" id="pet_safe"> is this plant pet safe : {{pet_safe}}</div>
+    <div class="list" id="edible"> is this plant edible : {{edible}}</div>
+    <div class="list" id="easy_care">is this plant good for beginers/easy to car for : {{easy_care}}</div>
+    <div class="list" id="water_needed"> how much water does this plant need : {{water_needed}}</div>
+    <div class="list" id="growth_rate">how fast will this plant grow : {{growth_rate}}</div>
+    <div class="list" id="size">what size is the plant now : {{size}}</div>
+    <div class="list" id="user_email">contact the plant owner at : {{user_email}}</div>
+    <a class="mailto" href="mailto:={{user_email}}">contact the plant owner at : {{user_email}}</a>
 
   </div>
   </a>
