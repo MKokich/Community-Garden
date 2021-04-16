@@ -23,3 +23,30 @@ h1 {
 h3 {
   text-align: center;
 }
+
+p {
+  color:black;
+  font-family: 'Amatic SC', cursive; 
+  font-size: 30px;
+}
+
+.list {
+  color:black;
+  font-family: 'Amatic SC', cursive; 
+  font-size: 20px;
+  text-align: center;
+}
+
+.header {
+  color:black;
+  font-family: 'Amatic SC', cursive; 
+  font-size: 35px;
+  text-align: center;
+}
+
+.mailto {
+  color:black;
+  font-family: 'Amatic SC', cursive; 
+  font-size: 30px;
+  text-align: center;
+}
