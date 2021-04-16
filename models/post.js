@@ -11,7 +11,7 @@ Post.init(
       autoIncrement: true,
     },
     // ???
-    image_name: {
+    image: {
       type: DataTypes.BLOB,
     },
     plant_name: {

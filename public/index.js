@@ -31,6 +31,7 @@ $(function () {
 
   $("#postbtn").on("click", function (e) {
     const plant_name = $("#plant_name").val();
+    // const image = $("#newImage").val();
     const description = $("#description").val();
     const sun_requirement = $("#sun_requirement").val();
     const pet_safe = $("#pet_safe").val();
@@ -43,6 +44,8 @@ $(function () {
 
     const newPost = {
       plant_name,
+      // maybe
+      // image,
       description,
       sun_requirement,
       pet_safe,
