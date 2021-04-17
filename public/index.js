@@ -68,4 +68,12 @@ $(function () {
         console.log(data);
       });
   });
+
+  // $("#deletebtn").on("click", function (e) {
+  //   fetch("/api/posts" + id, {
+  //     method: "DELETE",
+  //   })
+  //     .then((res) => res.text()) // or res.json()
+  //     .then((res) => console.log(res));
+  // });
 });
