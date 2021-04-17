@@ -31,10 +31,10 @@ router.get("/name/:plant_name", (req, res) => {
     .catch((err) => res.status(400).json(err));
 });
 
-router.get("/user/:user_id", (req, res) => {
+router.get("/user/:user_email", (req, res) => {
   Post.findAll({
     where: {
-      user_id: req.params.user_id,
+      user_email: req.params.user_email,
     },
   })
     .then((postData) => res.json(postData))
@@ -65,8 +65,6 @@ router.post("/newPost", async (req, res) => {
   try {
     const newPost = await Post.create(req.body);
     req.session.save(() => {
-      // req.session.user_id = newPost.id;
-      // ???
       // req.session.image_name = newPost.image_name;
       req.session.plant_name = newPost.plant_name;
       req.session.description = newPost.description;
@@ -77,7 +75,7 @@ router.post("/newPost", async (req, res) => {
       req.session.water_needed = newPost.water_needed;
       req.session.growth_rate = newPost.growth_rate;
       req.session.size = newPost.size;
-      req.session.user_id = newPost.user_id;
+      // req.session.user_id = newPost.user_id;
       req.session.user_email = newPost.user_email;
       res.status(200).json(newPost);
     });

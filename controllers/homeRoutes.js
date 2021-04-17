@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { Post, User } = require("../models");
+const { Post } = require("../models");
 const withAuth = require("../utils/auth");
 
 router.get("/", withAuth, (req, res) => {
@@ -37,6 +37,19 @@ router.get("/easy", withAuth, async (req, res) => {
   const easyPlants = easyCarePlants.map((post) => post.get({ plain: true }));
   res.render("easyCare", { easyPlants, logged_in: req.session.logged_in });
 });
+
+// // for deleteing own posts
+// router.get("/ownPost", async (req, res) => {
+//   const myOwnPlants = await Post.findAll({
+//     where: {
+//       // ???
+//       user.email : user_email,
+//     },
+//   });
+
+//   const ownPlants = myOwnPlants.map((post) => post.get({ plain: true }));
+//   res.render("ownPost", { ownPlants, logged_in: req.session.logged_in });
+// });
 
 router.get("/newPost", async (req, res) => {
   res.render("newPost");

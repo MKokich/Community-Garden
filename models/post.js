@@ -10,10 +10,9 @@ Post.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    // ???
-    image: {
-      type: DataTypes.BLOB,
-    },
+    // image: {
+    //   type: DataTypes.BLOB,
+    // },
     plant_name: {
       type: DataTypes.STRING,
       allowNull: false,
