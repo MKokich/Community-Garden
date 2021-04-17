@@ -49,7 +49,7 @@ Then, set up middleware to check the logged in status of that session. The appli
 
 ![Image of EasyCarePage](./assets/withAuth.png)
 
-Thus, here is what the thing is looking for to confirim and we have a functional login button that guides the user to the homepage and authenticates them as a user.
+Thus, here is what the thing it is looking for to confirim, and now we have a functional login button that guides the user to the homepage and authenticates them as a user.
 
 ## 🌱 Future Additions:
 At the start of this project, the team had a handful of ideas to implement for the website that time did not allow for us.
