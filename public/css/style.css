@@ -51,6 +51,12 @@ h3 {
   color: white;
 }
 
+.loginbtn {
+  background-color: #40693e;
+  color: white;
+  border-color: #40693e;
+}
+
 .background {
   position: fixed;
 }
