@@ -66,6 +66,14 @@
       <input type="size" class="form-control" id="user_email" placeholder="email">
       <label for="floatingInput">please enter your email</label>
     </div>
+
+{{!-- image stuff --}}
+  <form action="/store-image" method="POST" enctype="multipart/form-data">
+    <div>add picture?</div>
+    <input type="file"  name="image" id="imageUpload">
+    <button id="addPicBtn" type="submit" class="btn postbtn">add</button>
+  </form>
+
   </div>
 
   <button id="postbtn" type="submit" class="btn postbtn" href="/adopt">post</button>

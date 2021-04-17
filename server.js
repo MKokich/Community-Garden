@@ -4,6 +4,20 @@ const session = require("express-session");
 const exphbs = require("express-handlebars");
 const routes = require("./controllers");
 const helpers = require("./utils/helpers");
+const multer = require("multer");
+
+// image stuff
+const storage = multer.diskStorage ({
+  destination: "./public/uploads",
+  filename: function (req, file, cb){
+    cb(null, file.fieldname + "-" + Date.now() + path.extname(file.originalname));
+  }
+})
+
+const upload = multer({
+  storage : storage
+}).single("image");
+
 
 const sequelize = require("./config/connection");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
