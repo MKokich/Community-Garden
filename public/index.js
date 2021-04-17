@@ -69,11 +69,14 @@ $(function () {
       });
   });
 
-  // $("#deletebtn").on("click", function (e) {
-  //   fetch("/api/posts" + id, {
-  //     method: "DELETE",
-  //   })
-  //     .then((res) => res.text()) // or res.json()
-  //     .then((res) => console.log(res));
-  // });
+  $("#deletebtn").on("click", function (e) {
+    fetch("/api/posts" + id, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((res) => res.json())
+      .then((res) => console.log(res));
+  });
 });
