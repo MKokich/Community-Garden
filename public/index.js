@@ -68,4 +68,15 @@ $(function () {
         console.log(data);
       });
   });
+
+  $("#deletebtn").on("click", function (e) {
+    fetch("/api/posts" + id, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((res) => res.json())
+      .then((res) => console.log(res));
+  });
 });
