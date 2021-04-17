@@ -30,7 +30,7 @@ router.get("/name/:plant_name", (req, res) => {
     .then((postData) => res.json(postData))
     .catch((err) => res.status(400).json(err));
 });
-
+// ?
 router.get("/user/:user_email", (req, res) => {
   Post.findAll({
     where: {
@@ -44,7 +44,7 @@ router.get("/user/:user_email", (req, res) => {
 router.get("/easy/true", (req, res) => {
   Post.findAll({
     where: {
-      easy_care: true,
+      easy_care: "yes",
     },
   })
     .then((postData) => res.json(postData))

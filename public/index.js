@@ -39,7 +39,7 @@ $(function () {
     const water_needed = $("#water_needed").val();
     const growth_rate = $("#growth_rate").val();
     const size = $("#size").val();
-
+    const user_email = $("#user_email")
     const newPost = {
       plant_name,
       description,
@@ -50,6 +50,7 @@ $(function () {
       water_needed,
       growth_rate,
       size,
+      user_email
     };
     // console.log(newPost);
     fetch(`/api/posts/newPost`, {
@@ -66,4 +67,37 @@ $(function () {
         console.log(data);
       });
   });
+
+
+  $("#deletebtn").on("click", function (e) {
+    
+    const id = $("#plantId").text();
+    console.log(id)
+
+    fetch("/api/posts/" + id, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((res) => res.json())
+      .then((res) => console.log(res));
+  });
+  
+  $("#ownbtn").on("click", function (e) {
+    
+    const email = $("#own").val();
+    console.log(email)
+    
+    fetch("/ownPost/" + email, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((res) => res.json())
+      .then((res) => console.log(res));
+  });
+
+  
 });

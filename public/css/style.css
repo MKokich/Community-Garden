@@ -46,6 +46,12 @@ h3 {
   color: white;
 }
 
+.deletebtn {
+  background-color: #40693e;
+  color: white;
+  margin-top: 20px;
+}
+
 .createbtn {
   background-color: #40693e;
   color: white;
