@@ -86,31 +86,6 @@ router.post("/newPost", async (req, res) => {
   }
 });
 
-// // image stuff
-// router.post("/store-image", async (req, res) => {
-
-//   const newPic = await Pics.create(req.body);
-//   req.session.save(() => {
-//     req.session.image = newPic.image
-//   });
-  
-//   upload (req,res, (err) => {
-//    console.log(req.file)
-//   })
-
-//   const storage = multer.diskStorage ({
-//     destination: "./public/uploads",
-//     filename: function (req, file, cb){
-//       cb(null, file.fieldname + "-" + Date.now() + path.extname(file.originalname));
-//     }
-//   })
-
-//   const upload = multer({
-//     storage : storage
-//   }).single("image");
-
-// })
-
 router.delete("/:id", async (req, res) => {
   try {
     const deletePost = await Post.destroy({
