@@ -5,9 +5,10 @@
     "sun_requirement": "low",
     "pet_safe": "true",
     "edible": "false",
-    "easy_care": "true",
-    "have_or_want": "want",
-    "user_id": 1,
+    "easy_care": "yes",
+    "water_needed": "just a little",
+    "growth_rate": "this grows slowly",
+    "size": "big",
     "user_email": "jack1@gmail.com"
   },
   {
@@ -16,9 +17,10 @@
     "sun_requirement": "high",
     "pet_safe": "true",
     "edible": "false",
-    "easy_care": "true",
-    "have_or_want": "have",
-    "user_id": 2,
+    "easy_care": "yes",
+    "water_needed": "just a little",
+    "growth_rate": "this grows slowly",
+    "size": "big",
     "user_email": "jack2@gmail.com"
   },
   {
@@ -27,9 +29,10 @@
     "sun_requirement": "high",
     "pet_safe": "true",
     "edible": "false",
-    "easy_care": "true",
-    "have_or_want": "have",
-    "user_id": 3,
+    "easy_care": "no",
+    "water_needed": "just a little",
+    "growth_rate": "this grows slowly",
+    "size": "big",
     "user_email": "jack3@gmail.com"
   }
 ]

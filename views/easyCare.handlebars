@@ -1,8 +1,26 @@
-<section class="container">
-  <h3 class="gallery-name">Easy Plants!!!</h3>
-  <section class="flex-row justify-center">
-    {{#each easyPlants as |post|}}
-    <p>{{> displayAdopt}}</p>
-    {{/each}}
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a style="color: #40693e" class="btn btn-outline" onclick="window.location" aria-current="page"
+          href="./home">home</a>
+        <a style="color: #40693e" class="btn btn-outline" onclick="window.location" aria-current="page"
+          href="./newPost">post</a>
+        <a style="color: #40693e" class="btn btn-outline" onclick="window.location" aria-current="page"
+          href="./adopt">adopt</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+<div class="backround" style="background-image: url('../imgs/loginPlants.jpg');">
+  <section class="container">
+    <h3 class="easy">Easy Plants!</h3>
+    <section class="flex-row justify-center">
+      {{#each easyPlants as |post|}}
+      <p>{{> displayAdopt}}</p>
+      {{/each}}
+    </section>
   </section>
-</section>
+</div>

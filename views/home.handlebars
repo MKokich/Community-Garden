@@ -1,0 +1,80 @@
+<head>
+  <link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+  <title>community garden: home</title>
+</head>
+
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <button id="logout" type="submit" class="logoutbtn btn">logout</button>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a style="color: #40693e" class="nav-link active" aria-current="page" href="./home">home</a>
+          </li>
+          <li class="nav-item">
+            <a style="color: #40693e" class="nav-link" href="./adopt">adopt</a>
+          </li>
+          <li class="nav-item">
+            <a style="color: #40693e" class="nav-link" href="./newPost">post</a>
+          </li>
+          <li class="nav-item">
+            <a style="color: #40693e" class="nav-link" href="./easy">easy care</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <h1>community garden</h1>
+  <br>
+  <br>
+  <br>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <a href="./adopt" class="custom-card" style="color: black;">
+        <div class="card h-100">
+          <img src="imgs/adoptphoto.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">adopt.</h5>
+            <p class="card-text">provide a home to your new plant friend</p>
+          </div>
+        </div>
+      </a>
+
+    </div>
+    <div class="col">
+      <a href="./newPost" class="custom-card" style="color: black;">
+        <div class="card h-100">
+          <img src="imgs/postphoto.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">post.</h5>
+            <p class="card-text">show off your plant to its future home</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="./easy" class="custom-card" style="color: black;">
+        <div class="card h-100">
+          <img src="imgs/easyphoto.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">easy care.</h5>
+            <p class="card-text">plants for beginners</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="push"></div>
+
+
+
+  <script src="/js/logout.js"></script>

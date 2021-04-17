@@ -12,8 +12,20 @@ h1 {
   text-align: center;
 }
 
+.container {
+  width: 60%;
+}
+
+.postform {
+  width: 35%;
+}
+
 .col-4 {
   align-items: center;
+}
+
+body {
+  width: 100%;
 }
 
 .push {
@@ -21,5 +33,71 @@ h1 {
 }
 
 h3 {
+  text-align: center;
+}
+
+.logoutbtn {
+  background-color: #40693e;
+  color: white;
+}
+
+.postbtn {
+  background-color: #40693e;
+  color: white;
+}
+
+.createbtn {
+  background-color: #40693e;
+  color: white;
+}
+
+.loginbtn {
+  background-color: #40693e;
+  color: white;
+  border-color: #40693e;
+}
+
+.background {
+  position: fixed;
+}
+
+.easy {
+  color: #40693e;
+  font-family: "Amatic SC", cursive;
+  font-size: 70px;
+  text-align: center;
+}
+
+.adopt {
+  color: #40693e;
+  font-family: "Amatic SC", cursive;
+  font-size: 70px;
+  text-align: center;
+}
+
+p {
+  color: black;
+  font-family: "Amatic SC", cursive;
+  font-size: 30px;
+}
+
+.list {
+  color: black;
+  font-family: "Amatic SC", cursive;
+  font-size: 20px;
+  text-align: center;
+}
+
+.header {
+  color: black;
+  font-family: "Amatic SC", cursive;
+  font-size: 35px;
+  text-align: center;
+}
+
+.mailto {
+  color: black;
+  font-family: "Amatic SC", cursive;
+  font-size: 30px;
   text-align: center;
 }

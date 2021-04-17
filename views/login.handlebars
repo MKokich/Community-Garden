@@ -12,23 +12,26 @@
   </div>
   </div>
 </nav>
-<h1>community garden</h1>
+<h1>community garden - login</h1>
 {{!-- the ../ will be needed to link imgs in the folder the way they are set up --}}
 <div style="background-image: url('../imgs/loginPlants.jpg');">
   <div class="col row-6">
-    <h3>login</h3>
-    <div class=col-4>
-      <div class=row>
-        <form>
+
+    <div class="col-4">
+      <div class="row">
+        {{!-- added class to form div --}}
+        <form class="login-form">
           <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">email</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <input type="email" class="form-control" id="email-login" aria-describedby="emailHelp">
           </div>
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+            <input type="password" class="form-control" id="password-login">
           </div>
-          <button type="submit" class="btn btn-primary">submit</button>
+
+          <button class="loginbtn"> <a class="btn btn-outline" onclick="loginFormHandler()" aria-current="page"
+              id="submit">submit</a></button>
         </form>
       </div>
 
@@ -36,3 +39,5 @@
 
   </div>
   <div class="push"></div>
+
+  <script src="/js/login.js"></script>
