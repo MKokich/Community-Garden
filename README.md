@@ -3,6 +3,18 @@ For the plant lover to the new plant parent, this application has taken on the r
 
 ## 🌱 Our Application:  
     Once logged in, the user is introduced to a few uses of our application; adopt, post, and easy care. 
+    
+## 🌱 Usage:
+    - Open integrated terminal in server.js folder 
+    - Run "npm i"
+    - Copy schema from db file and insert into mysql
+    - Run database with lightening bolt icon
+    - Back in integrated terminal, run "npm run seed"
+    - Should now be seeded in your mysql workbench (database)
+    - Run "npm run start"
+    - Should now be listening on local host within integrated terminal
+    - Go back to database, refresh and open tables under db name
+    - Open browser and insert "localhost:3001" and this will bring up login page for application
 
 ### Login Page
 ![Image of LoginPage](./assets/login-page.png)
